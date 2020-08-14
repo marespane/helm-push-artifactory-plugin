@@ -6,5 +6,5 @@ ignoreFlags: false
 useTunnel: false
 command: "\\'$HELM_PLUGIN_DIR\\'/bin/helm-push-artifactory"
 hooks:
-  install: "'echo $HELM_PLUGIN_DIR; cd \\'$HELM_PLUGIN_DIR\\'; scripts/install_plugin.sh'"
+  install: "\"echo $HELM_PLUGIN_DIR; cd \\\"$HELM_PLUGIN_DIR\\\"; scripts/install_plugin.sh\""
   update: "cd \\'$HELM_PLUGIN_DIR\\'; scripts/install_plugin.sh"
